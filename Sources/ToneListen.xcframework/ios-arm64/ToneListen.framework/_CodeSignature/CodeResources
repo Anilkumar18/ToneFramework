@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/ToneListen.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		OcJG29QDBZJmCBJOzsnLLATYXXg=
+		zSNYPubCCadkvFz47C3NIfRX/CM=
 		</data>
 		<key>Modules/ToneListen.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/ToneListen.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		GHGFvfjNTA5WLfxhTBonTd9bS2c=
+		5ALYNSaawG+qczj8GjVamaj2pJM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,7 +65,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xaao0OVLv+I+NUVWQFqJK7YGMD2SfAuiwEkXZsawTAg=
+			v7Urk2t2vh167z0CnwNXE4VYmU41UQhjhLDA66GHje0=
 			</data>
 		</dict>
 		<key>Modules/ToneListen.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -93,7 +93,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g2EAwUFOi8XMoSe688cD3QpmP1a0WHQZ8PXIhrIcfHM=
+			LNmK8hQ3cia0Jr6/9GKj+tO8HtXKwx9MIm2dSnIgmzQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
