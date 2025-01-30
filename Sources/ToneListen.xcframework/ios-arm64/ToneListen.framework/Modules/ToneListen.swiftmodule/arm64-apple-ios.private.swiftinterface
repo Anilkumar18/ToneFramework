@@ -1,23 +1,36 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target arm64-apple-ios15.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ToneListen
+import AVFAudio
 import AVFoundation
 import AudioKit
+import CallKit
+import SystemConfiguration.CaptiveNetwork
 import Combine
 import CoreAudio
+import CoreBluetooth
+import CoreData
 import CoreLocation
+import CoreTelephony
 import Foundation
+import Network
+import SQLite3
+import Security
 import Swift
 import SwiftLocation
 import SwiftUI
+import SystemConfiguration
 @_exported import ToneListen
 import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public protocol ToneFrameworkDelegate : AnyObject {
+  func didReceiveDetectedTone(sequence: Swift.String)
+}
 @_hasMissingDesignatedInitializers public class RemoteService {
-  public static func handleContent(actionType: Swift.String, actionUrl: Swift.String)
+  public static func handleContent(actionType: Swift.String, actionUrl: Swift.String, actionData: Swift.String? = nil, tone: Swift.String? = nil)
   public static func checkTone(detectedTone: Swift.String)
   public static func checkToneHourly()
   @objc deinit
@@ -60,6 +73,7 @@ public protocol Observer : AnyObject {
   public var contentResponse: [Swift.String : Any]
   public static let clientNotificationName: Foundation.Notification.Name
   public static let notificationName: Foundation.Notification.Name
+  public static let notificationImageData: Foundation.Notification.Name
   public static let responseObjectNotificationName: Foundation.Notification.Name
   public func requestPermission()
   @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
@@ -83,7 +97,7 @@ public class GoertzelTap : AudioKit.BaseTap {
   override public func doHandleTapBlock(buffer: AVFAudio.AVAudioPCMBuffer, at time: AVFAudio.AVAudioTime)
 }
 public class ToneFrameworkManager {
-  public init(observer: any ToneListen.Observer)
+  public init()
   public func LogTone(message: Swift.String)
   public func startRecognizer()
   public func stopRecognizer()
@@ -95,5 +109,47 @@ public class ToneFramework {
   public func start()
   public func stop()
   public func setClientId(clientID: Swift.String)
+  public func enableToneOfflineMode(clientID: Swift.String, _ isEnable: Swift.Bool)
+  public func enableWifiDetection(_ isEnable: Swift.Bool?)
+  public func enableBluetoothDetection(_ isEnable: Swift.Bool?)
+  public func enableCarrierDetection(_ isEnable: Swift.Bool?)
   @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(ToneData) public class ToneData : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension ToneListen.ToneData {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<ToneListen.ToneData>
+  @objc @NSManaged dynamic public var actionData: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var actionType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var actionUrl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var clientDesc: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var clientName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var toneSequence: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension ToneListen.ToneData : Swift.Identifiable {
+  public typealias ID = Swift.Int32
 }

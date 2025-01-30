@@ -277,6 +277,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreData;
 @import ObjectiveC;
 @import UserNotifications;
 #endif
@@ -309,6 +310,28 @@ SWIFT_CLASS("_TtC10ToneListen20NotificationsHandler")
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 - (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center didReceiveNotificationResponse:(UNNotificationResponse * _Nonnull)response withCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
 @end
+
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS_NAMED("ToneData")
+@interface ToneData : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@class NSString;
+
+@interface ToneData (SWIFT_EXTENSION(ToneListen))
+@property (nonatomic, copy) NSString * _Nullable actionData;
+@property (nonatomic, copy) NSString * _Nullable actionType;
+@property (nonatomic, copy) NSString * _Nullable actionUrl;
+@property (nonatomic, copy) NSString * _Nullable clientDesc;
+@property (nonatomic, copy) NSString * _Nullable clientName;
+@property (nonatomic) int32_t id;
+@property (nonatomic, copy) NSString * _Nullable toneSequence;
+@end
+
 
 
 #endif
