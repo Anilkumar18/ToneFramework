@@ -21,4 +21,7 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "Sources/ToneListen.xcframework"
   spec.swift_version  = "5.0"
 
+  spec.ios.pod_target_xcconfig = {
+    'EXCLUDED_ARCHITECTURES' => 'x86_64 arm64e'  # Exclude simulator architectures
+  }
 end
