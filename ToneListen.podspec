@@ -24,4 +24,5 @@ Pod::Spec.new do |spec|
   spec.ios.pod_target_xcconfig = {
     'EXCLUDED_ARCHITECTURES' => 'x86_64 arm64e'  # Exclude simulator architectures
   }
+  
 end
