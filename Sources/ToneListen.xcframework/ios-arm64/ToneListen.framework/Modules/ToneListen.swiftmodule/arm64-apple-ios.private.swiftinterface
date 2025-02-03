@@ -26,9 +26,6 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public protocol ToneFrameworkDelegate : AnyObject {
-  func didReceiveDetectedTone(sequence: Swift.String)
-}
 @_hasMissingDesignatedInitializers public class RemoteService {
   public static func handleContent(actionType: Swift.String, actionUrl: Swift.String, actionData: Swift.String? = nil, tone: Swift.String? = nil)
   public static func checkTone(detectedTone: Swift.String)
@@ -97,7 +94,7 @@ public class GoertzelTap : AudioKit.BaseTap {
   override public func doHandleTapBlock(buffer: AVFAudio.AVAudioPCMBuffer, at time: AVFAudio.AVAudioTime)
 }
 public class ToneFrameworkManager {
-  public init()
+  public init(observer: any ToneListen.Observer)
   public func LogTone(message: Swift.String)
   public func startRecognizer()
   public func stopRecognizer()

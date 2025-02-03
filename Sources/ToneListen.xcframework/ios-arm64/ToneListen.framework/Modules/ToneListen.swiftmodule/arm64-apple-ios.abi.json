@@ -49,59 +49,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "ToneFrameworkDelegate",
-        "printedName": "ToneFrameworkDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "didReceiveDetectedTone",
-            "printedName": "didReceiveDetectedTone(sequence:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10ToneListen0A17FrameworkDelegateP018didReceiveDetectedA08sequenceySS_tF",
-            "mangledName": "$s10ToneListen0A17FrameworkDelegateP018didReceiveDetectedA08sequenceySS_tF",
-            "moduleName": "ToneListen",
-            "genericSig": "<τ_0_0 where τ_0_0 : ToneListen.ToneFrameworkDelegate>",
-            "sugared_genericSig": "<Self where Self : ToneListen.ToneFrameworkDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:10ToneListen0A17FrameworkDelegateP",
-        "mangledName": "$s10ToneListen0A17FrameworkDelegateP",
-        "moduleName": "ToneListen",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ToneListen",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "CoreBluetooth",
         "printedName": "CoreBluetooth",
@@ -2441,18 +2388,24 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init()",
+            "printedName": "init(observer:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "ToneFrameworkManager",
                 "printedName": "ToneListen.ToneFrameworkManager",
                 "usr": "s:10ToneListen0A16FrameworkManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Observer",
+                "printedName": "any ToneListen.Observer",
+                "usr": "s:10ToneListen8ObserverP"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10ToneListen0A16FrameworkManagerCACycfc",
-            "mangledName": "$s10ToneListen0A16FrameworkManagerCACycfc",
+            "usr": "s:10ToneListen0A16FrameworkManagerC8observerAcA8Observer_p_tcfc",
+            "mangledName": "$s10ToneListen0A16FrameworkManagerC8observerAcA8Observer_p_tcfc",
             "moduleName": "ToneListen",
             "declAttributes": [
               "AccessControl"
@@ -4571,6 +4524,20 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/SwiftRecognizer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2143,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/SwiftRecognizer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2165,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/ToneOfflineServices\/ToneOfflineStorageManager.swift",
       "kind": "StringLiteral",
       "offset": 258,
@@ -6244,7 +6211,7 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/InactiveFiles\/ToneAPI.swift",
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/observer\/ToneAPI.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 2,
@@ -6622,7 +6589,7 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/InactiveFiles\/observer\/Obvserver.swift",
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/observer\/Obvserver.swift",
       "kind": "StringLiteral",
       "offset": 283,
       "length": 2,
@@ -6855,7 +6822,7 @@
     {
       "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DevHandler\/ToneFrameworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 2122,
+      "offset": 2153,
       "length": 20,
       "value": "\"ToneListen.CallObserverDelegate\""
     }
