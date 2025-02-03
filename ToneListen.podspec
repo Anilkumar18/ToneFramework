@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.swift_version  = "5.0"
 
   spec.ios.pod_target_xcconfig = {
-    'EXCLUDED_ARCHITECTURES' => 'x86_64 arm64e'  # Exclude simulator architectures
-  }
+  'EXCLUDED_ARCHITECTURES[sdk=iphonesimulator*]' => 'arm64 x86_64'
+}
   
 end
