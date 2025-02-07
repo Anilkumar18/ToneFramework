@@ -223,6 +223,13 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "ToneListen"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "ToneListen",
         "declAttributes": [
           "RawDocComment"
@@ -398,6 +405,83 @@
           "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ToneListen",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PresentSheetContent",
+        "printedName": "PresentSheetContent",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(actionType:url:networkType:imageData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PresentSheetContent",
+                "printedName": "ToneListen.PresentSheetContent",
+                "usr": "s:10ToneListen19PresentSheetContentC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10ToneListen19PresentSheetContentC10actionType3url07networkG09imageDataACSS_S2S10Foundation0K0VSgtcfc",
+            "mangledName": "$s10ToneListen19PresentSheetContentC10actionType3url07networkG09imageDataACSS_S2S10Foundation0K0VSgtcfc",
+            "moduleName": "ToneListen",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10ToneListen19PresentSheetContentC",
+        "mangledName": "$s10ToneListen19PresentSheetContentC",
+        "moduleName": "ToneListen",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -1127,6 +1211,16 @@
             "usr": "s:10ToneListen8ObserverP",
             "mangledName": "$s10ToneListen8ObserverP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ToneListen",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -2372,6 +2466,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ToneListen",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2582,6 +2686,557 @@
             ]
           },
           {
+            "kind": "TypeDecl",
+            "name": "Action",
+            "printedName": "Action",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "start",
+                "printedName": "start",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ToneListen.ToneFramework.Action.Type) -> ToneListen.ToneFramework.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "ToneListen.ToneFramework.Action",
+                        "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ToneListen.ToneFramework.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "ToneListen.ToneFramework.Action",
+                            "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ToneListen0A9FrameworkC6ActionO5startyA2EmF",
+                "mangledName": "$s10ToneListen0A9FrameworkC6ActionO5startyA2EmF",
+                "moduleName": "ToneListen"
+              },
+              {
+                "kind": "Var",
+                "name": "stop",
+                "printedName": "stop",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ToneListen.ToneFramework.Action.Type) -> ToneListen.ToneFramework.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "ToneListen.ToneFramework.Action",
+                        "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ToneListen.ToneFramework.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "ToneListen.ToneFramework.Action",
+                            "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ToneListen0A9FrameworkC6ActionO4stopyA2EmF",
+                "mangledName": "$s10ToneListen0A9FrameworkC6ActionO4stopyA2EmF",
+                "moduleName": "ToneListen"
+              },
+              {
+                "kind": "Var",
+                "name": "restartService",
+                "printedName": "restartService",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ToneListen.ToneFramework.Action.Type) -> ToneListen.ToneFramework.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "ToneListen.ToneFramework.Action",
+                        "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ToneListen.ToneFramework.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "ToneListen.ToneFramework.Action",
+                            "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ToneListen0A9FrameworkC6ActionO14restartServiceyA2EmF",
+                "mangledName": "$s10ToneListen0A9FrameworkC6ActionO14restartServiceyA2EmF",
+                "moduleName": "ToneListen"
+              },
+              {
+                "kind": "Var",
+                "name": "deleteOfflineData",
+                "printedName": "deleteOfflineData",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ToneListen.ToneFramework.Action.Type) -> ToneListen.ToneFramework.Action",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "ToneListen.ToneFramework.Action",
+                        "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ToneListen.ToneFramework.Action.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Action",
+                            "printedName": "ToneListen.ToneFramework.Action",
+                            "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ToneListen0A9FrameworkC6ActionO17deleteOfflineDatayA2EmF",
+                "mangledName": "$s10ToneListen0A9FrameworkC6ActionO17deleteOfflineDatayA2EmF",
+                "moduleName": "ToneListen"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Action",
+                    "printedName": "ToneListen.ToneFramework.Action",
+                    "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Action",
+                    "printedName": "ToneListen.ToneFramework.Action",
+                    "usr": "s:10ToneListen0A9FrameworkC6ActionO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10ToneListen0A9FrameworkC6ActionO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s10ToneListen0A9FrameworkC6ActionO2eeoiySbAE_AEtFZ",
+                "moduleName": "ToneListen",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10ToneListen0A9FrameworkC6ActionO9hashValueSivp",
+                "mangledName": "$s10ToneListen0A9FrameworkC6ActionO9hashValueSivp",
+                "moduleName": "ToneListen",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10ToneListen0A9FrameworkC6ActionO9hashValueSivg",
+                    "mangledName": "$s10ToneListen0A9FrameworkC6ActionO9hashValueSivg",
+                    "moduleName": "ToneListen",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10ToneListen0A9FrameworkC6ActionO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s10ToneListen0A9FrameworkC6ActionO4hash4intoys6HasherVz_tF",
+                "moduleName": "ToneListen",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10ToneListen0A9FrameworkC6ActionO",
+            "mangledName": "$s10ToneListen0A9FrameworkC6ActionO",
+            "moduleName": "ToneListen",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Feature",
+            "printedName": "Feature",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "offlineMode",
+                "printedName": "offlineMode",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ToneListen.ToneFramework.Feature.Type) -> (Swift.String, Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(isClientId: Swift.String, Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ToneListen.ToneFramework.Feature.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ToneListen0A9FrameworkC7FeatureO11offlineModeyAESS_SbtcAEmF",
+                "mangledName": "$s10ToneListen0A9FrameworkC7FeatureO11offlineModeyAESS_SbtcAEmF",
+                "moduleName": "ToneListen"
+              },
+              {
+                "kind": "Var",
+                "name": "wifiDetection",
+                "printedName": "wifiDetection",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ToneListen.ToneFramework.Feature.Type) -> (Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ToneListen.ToneFramework.Feature.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ToneListen0A9FrameworkC7FeatureO13wifiDetectionyAESbcAEmF",
+                "mangledName": "$s10ToneListen0A9FrameworkC7FeatureO13wifiDetectionyAESbcAEmF",
+                "moduleName": "ToneListen"
+              },
+              {
+                "kind": "Var",
+                "name": "bluetoothDetection",
+                "printedName": "bluetoothDetection",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ToneListen.ToneFramework.Feature.Type) -> (Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ToneListen.ToneFramework.Feature.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ToneListen0A9FrameworkC7FeatureO18bluetoothDetectionyAESbcAEmF",
+                "mangledName": "$s10ToneListen0A9FrameworkC7FeatureO18bluetoothDetectionyAESbcAEmF",
+                "moduleName": "ToneListen"
+              },
+              {
+                "kind": "Var",
+                "name": "carrierDetection",
+                "printedName": "carrierDetection",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ToneListen.ToneFramework.Feature.Type) -> (Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ToneListen.ToneFramework.Feature.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ToneListen0A9FrameworkC7FeatureO16carrierDetectionyAESbcAEmF",
+                "mangledName": "$s10ToneListen0A9FrameworkC7FeatureO16carrierDetectionyAESbcAEmF",
+                "moduleName": "ToneListen"
+              },
+              {
+                "kind": "Var",
+                "name": "defaultToneTagSheet",
+                "printedName": "defaultToneTagSheet",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ToneListen.ToneFramework.Feature.Type) -> (Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.Bool) -> ToneListen.ToneFramework.Feature",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ToneListen.ToneFramework.Feature.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "ToneListen.ToneFramework.Feature",
+                            "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10ToneListen0A9FrameworkC7FeatureO07defaultA8TagSheetyAESbcAEmF",
+                "mangledName": "$s10ToneListen0A9FrameworkC7FeatureO07defaultA8TagSheetyAESbcAEmF",
+                "moduleName": "ToneListen"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10ToneListen0A9FrameworkC7FeatureO",
+            "mangledName": "$s10ToneListen0A9FrameworkC7FeatureO",
+            "moduleName": "ToneListen",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -2601,46 +3256,6 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10ToneListen0A9FrameworkC5startyyF",
-            "mangledName": "$s10ToneListen0A9FrameworkC5startyyF",
-            "moduleName": "ToneListen",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10ToneListen0A9FrameworkC4stopyyF",
-            "mangledName": "$s10ToneListen0A9FrameworkC4stopyyF",
-            "moduleName": "ToneListen",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -2670,8 +3285,8 @@
           },
           {
             "kind": "Function",
-            "name": "enableToneOfflineMode",
-            "printedName": "enableToneOfflineMode(clientID:_:)",
+            "name": "perform",
+            "printedName": "perform(action:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2680,20 +3295,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Action",
+                "printedName": "ToneListen.ToneFramework.Action",
+                "usr": "s:10ToneListen0A9FrameworkC6ActionO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10ToneListen0A9FrameworkC06enableA11OfflineMode8clientID_ySS_SbtF",
-            "mangledName": "$s10ToneListen0A9FrameworkC06enableA11OfflineMode8clientID_ySS_SbtF",
+            "usr": "s:10ToneListen0A9FrameworkC7perform6actionyAC6ActionO_tF",
+            "mangledName": "$s10ToneListen0A9FrameworkC7perform6actionyAC6ActionO_tF",
             "moduleName": "ToneListen",
             "declAttributes": [
               "AccessControl"
@@ -2702,8 +3311,8 @@
           },
           {
             "kind": "Function",
-            "name": "enableWifiDetection",
-            "printedName": "enableWifiDetection(_:)",
+            "name": "setFeature",
+            "printedName": "setFeature(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2712,90 +3321,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Feature",
+                "printedName": "ToneListen.ToneFramework.Feature",
+                "usr": "s:10ToneListen0A9FrameworkC7FeatureO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10ToneListen0A9FrameworkC19enableWifiDetectionyySbSgF",
-            "mangledName": "$s10ToneListen0A9FrameworkC19enableWifiDetectionyySbSgF",
-            "moduleName": "ToneListen",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enableBluetoothDetection",
-            "printedName": "enableBluetoothDetection(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10ToneListen0A9FrameworkC24enableBluetoothDetectionyySbSgF",
-            "mangledName": "$s10ToneListen0A9FrameworkC24enableBluetoothDetectionyySbSgF",
-            "moduleName": "ToneListen",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "enableCarrierDetection",
-            "printedName": "enableCarrierDetection(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10ToneListen0A9FrameworkC22enableCarrierDetectionyySbSgF",
-            "mangledName": "$s10ToneListen0A9FrameworkC22enableCarrierDetectionyySbSgF",
+            "usr": "s:10ToneListen0A9FrameworkC10setFeatureyyAC0E0OF",
+            "mangledName": "$s10ToneListen0A9FrameworkC10setFeatureyyAC0E0OF",
             "moduleName": "ToneListen",
             "declAttributes": [
               "AccessControl"
@@ -3753,6 +4286,396 @@
         "printedName": "CoreData",
         "declKind": "Import",
         "moduleName": "ToneListen"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Dictionary",
+        "printedName": "Dictionary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "printAsJSON",
+            "printedName": "printAsJSON()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD10ToneListenE11printAsJSONyyF",
+            "mangledName": "$sSD10ToneListenE11printAsJSONyyF",
+            "moduleName": "ToneListen",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+            "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:SD",
+        "mangledName": "$sSD",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Index",
+                    "usr": "s:SD5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByDictionaryLiteral",
+            "printedName": "ExpressibleByDictionaryLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Key",
+                "printedName": "Key",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s30ExpressibleByDictionaryLiteralP",
+            "mangledName": "$ss30ExpressibleByDictionaryLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Occupiable",
+            "printedName": "Occupiable",
+            "usr": "s:8AudioKit10OccupiableP",
+            "mangledName": "$s8AudioKit10OccupiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Collection",
+        "printedName": "Collection",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "json",
+            "printedName": "json()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:Sl10ToneListenE4jsonSSyF",
+            "mangledName": "$sSl10ToneListenE4jsonSSyF",
+            "moduleName": "ToneListen",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Collection>",
+            "sugared_genericSig": "<Self where Self : Swift.Collection>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:Sl",
+        "mangledName": "$sSl",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0 : Swift.Sequence, τ_0_0.Element == τ_0_0.SubSequence.Element, τ_0_0.Index : Swift.Comparable, τ_0_0.Index == τ_0_0.Indices.Element, τ_0_0.Indices : Swift.Collection, τ_0_0.Indices == τ_0_0.Indices.SubSequence, τ_0_0.SubSequence : Swift.Collection, τ_0_0.SubSequence == τ_0_0.SubSequence.SubSequence, τ_0_0.Indices.Element == τ_0_0.Indices.Index, τ_0_0.Indices.Index == τ_0_0.SubSequence.Index>",
+        "sugared_genericSig": "<Self : Swift.Sequence, Self.Element == Self.SubSequence.Element, Self.Index : Swift.Comparable, Self.Index == Self.Indices.Element, Self.Indices : Swift.Collection, Self.Indices == Self.Indices.SubSequence, Self.SubSequence : Swift.Collection, Self.SubSequence == Self.SubSequence.SubSequence, Self.Indices.Element == Self.Indices.Index, Self.Indices.Index == Self.SubSequence.Index>",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -6218,6 +7141,55 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DefaultSheetProcessor\/PresentSheetUI.swift",
+      "kind": "StringLiteral",
+      "offset": 361,
+      "length": 13,
+      "value": "\"TAG Content\""
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DefaultSheetProcessor\/PresentSheetUI.swift",
+      "kind": "IntegerLiteral",
+      "offset": 464,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DefaultSheetProcessor\/PresentSheetUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 559,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DefaultSheetProcessor\/PresentSheetUI.swift",
+      "kind": "StringLiteral",
+      "offset": 701,
+      "length": 6,
+      "value": "\"Back\""
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DefaultSheetProcessor\/PresentSheetUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 927,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DefaultSheetProcessor\/PresentSheetUI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1164,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DefaultSheetProcessor\/PresentSheetUI.swift",
+      "kind": "StringLiteral",
+      "offset": 113,
+      "length": 25,
+      "value": "\"ToneListen.SheetDetailViewController\""
+    },
+    {
       "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/ToneOfflineServices\/SecureDataRouter.swift",
       "kind": "StringLiteral",
       "offset": 1529,
@@ -6412,6 +7384,34 @@
       "offset": 2708,
       "length": 26,
       "value": "\"duplicateDetectionTiming\""
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/ToneNetwork\/ToneModels.swift",
+      "kind": "StringLiteral",
+      "offset": 2900,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/ToneNetwork\/ToneModels.swift",
+      "kind": "StringLiteral",
+      "offset": 2932,
+      "length": 9,
+      "value": "\"content\""
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/ToneNetwork\/ToneModels.swift",
+      "kind": "StringLiteral",
+      "offset": 2900,
+      "length": 8,
+      "value": "\"status\""
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/ToneNetwork\/ToneModels.swift",
+      "kind": "StringLiteral",
+      "offset": 2932,
+      "length": 9,
+      "value": "\"content\""
     },
     {
       "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/InactiveFiles\/AudioRecognizer.swift",
@@ -6820,9 +7820,37 @@
       "value": "\"is_duplicate_detection_timing_key\""
     },
     {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/ToneOfflineServices\/DefaultsWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 713,
+      "length": 29,
+      "value": "\"is_enable_default_sheet_key\""
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/ToneOfflineServices\/DefaultsWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 833,
+      "length": 28,
+      "value": "\"is_enable_offline_mode_key\""
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DefaultSheetProcessor\/Sheet Utilits.swift",
+      "kind": "IntegerLiteral",
+      "offset": 883,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DefaultSheetProcessor\/Sheet Utilits.swift",
+      "kind": "FloatLiteral",
+      "offset": 908,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
       "filePath": "\/Users\/anilkumar\/Downloads\/ToneKnows\/ToneListen-Framework-Swift\/ToneListen\/DevHandler\/ToneFrameworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 2153,
+      "offset": 4104,
       "length": 20,
       "value": "\"ToneListen.CallObserverDelegate\""
     }

@@ -26,10 +26,20 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension Swift.Dictionary {
+  public func printAsJSON()
+}
+extension Swift.Collection {
+  public func json() -> Swift.String
+}
 @_hasMissingDesignatedInitializers public class RemoteService {
   public static func handleContent(actionType: Swift.String, actionUrl: Swift.String, actionData: Swift.String? = nil, tone: Swift.String? = nil)
   public static func checkTone(detectedTone: Swift.String)
   public static func checkToneHourly()
+  @objc deinit
+}
+public class PresentSheetContent {
+  public init(actionType: Swift.String, url: Swift.String, networkType: Swift.String, imageData: Foundation.Data?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GoertzelTabNew {
@@ -102,14 +112,28 @@ public class ToneFrameworkManager {
 }
 public class ToneFramework {
   public static let shared: ToneListen.ToneFramework
+  public enum Action {
+    case start
+    case stop
+    case restartService
+    case deleteOfflineData
+    public static func == (a: ToneListen.ToneFramework.Action, b: ToneListen.ToneFramework.Action) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Feature {
+    case offlineMode(isClientId: Swift.String, Swift.Bool)
+    case wifiDetection(Swift.Bool)
+    case bluetoothDetection(Swift.Bool)
+    case carrierDetection(Swift.Bool)
+    case defaultToneTagSheet(Swift.Bool)
+  }
   public init()
-  public func start()
-  public func stop()
   public func setClientId(clientID: Swift.String)
-  public func enableToneOfflineMode(clientID: Swift.String, _ isEnable: Swift.Bool)
-  public func enableWifiDetection(_ isEnable: Swift.Bool?)
-  public func enableBluetoothDetection(_ isEnable: Swift.Bool?)
-  public func enableCarrierDetection(_ isEnable: Swift.Bool?)
+  public func perform(action: ToneListen.ToneFramework.Action)
+  public func setFeature(_ feature: ToneListen.ToneFramework.Feature)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(ToneData) public class ToneData : CoreData.NSManagedObject {
@@ -150,3 +174,5 @@ extension ToneListen.ToneData {
 extension ToneListen.ToneData : Swift.Identifiable {
   public typealias ID = Swift.Int32
 }
+extension ToneListen.ToneFramework.Action : Swift.Equatable {}
+extension ToneListen.ToneFramework.Action : Swift.Hashable {}
