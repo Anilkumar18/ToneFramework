@@ -327,8 +327,7 @@ SWIFT_CLASS_NAMED("ToneData")
 @property (nonatomic, copy) NSString * _Nullable actionType;
 @property (nonatomic, copy) NSString * _Nullable actionUrl;
 @property (nonatomic, copy) NSString * _Nullable clientDesc;
-@property (nonatomic, copy) NSString * _Nullable clientName;
-@property (nonatomic) int32_t id;
+@property (nonatomic, copy) NSString * _Nullable id;
 @property (nonatomic, copy) NSString * _Nullable toneSequence;
 @end
 
