@@ -21,12 +21,16 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "Sources/ToneListen.xcframework"
   spec.swift_version  = "5.0"
   
-  spec.pod_target_xcconfig = {
-    'EXCLUDED_ARCHITECTURES[sdk=iphonesimulator*]' => 'arm64 x86_64'
+    spec.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64',
+    'ARCHS' => 'arm64',
+    'VALID_ARCHS' => 'arm64 arm64e'
   }
   
-  spec.test_spec do |test_spec|
-    test_spec.requires_app_host = false
-  end
+  spec.user_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64',
+    'ARCHS' => 'arm64',
+    'VALID_ARCHS' => 'arm64 arm64e'
+  }
 
 end
