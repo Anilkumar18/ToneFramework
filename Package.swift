@@ -1,20 +1,20 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
-    name: "ToneFramework",
+    name: "ToneListen",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "ToneFramework",
-            targets: ["ToneFramework"]
-        ),
+            name: "ToneListen",
+            targets: ["ToneListen"]
+        )
     ],
     targets: [
         .binaryTarget(
-            name: "ToneFramework",
+            name: "ToneListen",
             path: "Sources/ToneListen.xcframework"
         )
     ]
